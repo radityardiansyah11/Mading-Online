@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 
 <head>
     <meta charset="utf-8">
@@ -28,8 +28,8 @@
                     <img src="./Image/Bookmark.svg" alt="bookmark" width="30" class="m-3">
                 </a>
             </div>
-            <div class="col">
-                <h1 class="text-center mt-2">Placeholder Logo</h1>
+            <div class="col text-center">
+                <img src="./Image/Logo.png" alt="logo" width="200" class="img-fluid">
             </div>
             <div class="col text-end">
                 <a href="#" class="btn text-white m-3" style="background-color: #FF002E" tabindex="-1" role="button"
@@ -70,8 +70,72 @@
         </nav>
     </header>
 
+
     <main class="bg-body-secondary p-3">
-        <div class="row mt-2"></div>
+
+        <!-- Informasi head -->
+        <div class="row mt-2">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="./image/CardImage.png" alt="Foto" style="width: 100%; max-width: 100%; height: 300px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="informasi"
+                    style="height: 800px; display: flex; flex-direction: column; align-items: flex-start; border: 1px solid #ccc; padding: 10px; border-radius: 5px;  margin-bottom: 10px; background-color: white;">
+                    <h3 class="judul" style="text-align: left; margin-top: 6px; font-size: 40px;"><b>Peningkatan Layanan
+                            Kesehatan Palu Diapresiasi Menkes Budi</b></h3>
+
+                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 20px;">
+                        <p class="penulis" style="font-size: 20px;">Penulis Berita</p>
+                        <div class="btn-like-smpn d-flex align-items-center">
+                            <p style="font-size: 20px; margin-left: 5px; margin-bottom: 0;">35</p>
+                            <input type="image" src="./image/Like.svg" alt="Like button" width="25px" height="25px"
+                                style="margin-right: 10px;">
+                            <input type="image" src="./image/Bookmark.svg" alt="Bookmark button" width="25px"
+                                height="25px">
+                        </div>
+                    </div>
+                    <hr style="margin-top: 20px; border: none; border-bottom: 1px solid #000000; width: 100%;">
+
+                    <div class="isiberita">
+                        <p style="font-size: 18px; text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit</p>
+                    </div>
+
+                    <div class="gambarberita" style="display: flex; justify-content: center; align-items: center;">
+                        <img src="./image/CardImage.png" alt="Foto" style="width: 100px; height: auto;">
+                    </div>
+                                      
+
+                    <div class="isiberita-text">
+                        <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <div class="isiberita2">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="./image/CardImage.png" alt="foto"
+                                    style="width: 100%; height: 250px; margin-bottom: 20px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 
 
         <!-- Komentar -->
@@ -81,15 +145,15 @@
                 <form id="comment-form" class="comment-form ml-3">
                     <div class="mb-2 d-flex align-items-center">
                         <input type="text" class="form-control flex-grow-1" id="coment" name="comment"
-                            style="width: 200%;" required>
+                            style="width: 100%;" required>
                         <input type="image" src="./image/Send.svg" alt="Submit button" width="25px" height="25px"
                             style="margin-left: 10px;">
                     </div>
                 </form>
             </div>
         </div>
-
-
+        
+        
         <div class="row mt-1">
             <div class="col-12">
                 <div class="comment-section"
@@ -198,7 +262,7 @@
     <!-- Footer -->
     <footer class="bg-black p-3 text-white">
         <h5>About Us</h5>
-        <p>Logo</p>
+        <img src="./Image/Logo.png" alt="logo" width="50" class="mb-2">
         <p>
             Muhammad Axel Fendrio (UI/UX)<br>
             Raditya Bagus Ardiansyah (Frontend)<br>
