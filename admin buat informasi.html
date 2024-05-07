@@ -111,14 +111,66 @@
         <div class="btn-row">
             <div class="btn-col">
                 <div class="btn-col text-center">
-                    <a href="#" class="btn text-white mt-3 w-25" style="background-color: #009900; max-width: 200px;" tabindex="-1" role="button"
-                        aria-disabled="true">
+                    <a href="#" class="btn text-white mt-3 w-25" style="background-color: #009900; max-width: 200px;"
+                        tabindex="-1" role="button" aria-disabled="true" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
                         Kirim
                         <img src="./image/Send 1.svg" alt="send" width="15" style="fill: #ffffff;">
                     </a>
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header" style="border: none;">
+                        <h1 class="modal-title fs-5 text-center w-100" id="staticBackdropLabel">FINISHING</h1>
+                    </div>
+                    <div class="modal-body" style="border: none;">
+                        <div class="nama-row d-flex align-items-center w-100 mt-2">
+                            <div class="row w-100">
+                                <div class="col-md-auto">
+                                    <h5 class="nama-col me-2" style="font-weight: normal;">Nama :</h5>
+                                </div>
+                                <div class="col">
+                                    <div class="w-100">
+                                        <input type="text" alt="nama" placeholder="Nama Pubisher" class="form-control w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center w-100 mt-3 mb-3">
+                            <div class="row w-100">
+                                <div class="col-md-auto">
+                                    <h5 class="me-2" style="font-weight: normal;">Kategori :</h5>
+                                </div>
+                                <div class="col">
+                                    <div class="w-100">
+                                        <select class="form-select w-100">
+                                            <option selected>Pilih Kategori</option>
+                                            <option value="1">Pengumuman</option>
+                                            <option value="2">Kegiatan Sekolah</option>
+                                            <option value="3">Event & Lomba</option>
+                                            <option value="4">Pendaftaran Siswa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-footer d-flex justify-content-center" style="border: none;">
+                            <button type="button" class="btn btn-secondary w-100 me-4" data-bs-dismiss="modal" style="background-color: #FF002E; max-width: 150px;">Batal</button>
+                            <button type="button" class="btn btn-primary w-100" style="background-color: #009900; max-width: 150px;">Kirim
+                                <img src="./image/Send 1.svg" alt="send" width="15" style="fill: #ffffff;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
     </main>
     <footer class="bg-black p-3 text-white">
