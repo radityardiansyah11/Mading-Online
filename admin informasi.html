@@ -30,35 +30,22 @@
 
 <body style="overflow-x: hidden;">
     <header class="mb-1">
-        <div class="w-100 p-4" style="background-color: #5227CC"></div>
-        <div class="row">
-            <div class="col">
-                <a href="./bookmark.html">
-                    <img src="./Image/Bookmark.svg" alt="bookmark" width="30" class="m-3">
-                </a>
-            </div>
-            <div class="col text-center">
-                <img src="./Image/Logo.png" alt="logo" width="200" class="img-fluid">
-            </div>
-            <div class="col text-end">
-                <a href="#" class="btn text-white m-3" style="background-color: #FF002E" tabindex="-1" role="button"
-                    aria-disabled="true">
-                    Logout
-                </a>
-            </div>
-        </div>
         <nav class="navbar navbar-expand-lg pt-0">
             <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./Image/Logo-2.png" alt="logo" width="250">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
                         <li class="nav-item">
                             <a class="nav-link mx-2 pb-0 active" aria-current="page" href="./">Beranda</a>
-                            <div class="border border-0 rounded-pill" style="background-color: #2791CC; height: 3px">
+                            <div class="border border-0 rounded-pill mt-1"
+                                style="background-color: #2791CC; height: 3px">
                             </div>
                         </li>
                         <li class="nav-item">
@@ -74,6 +61,32 @@
                             <a class="nav-link mx-2 pb-0" href="./pendaftaran.html">Pendaftaran Siswa</a>
                         </li>
                     </ul>
+                    <div class="text-end">
+                        <button type="button" class="btn text-white m-1" style="background-color: #2791CC"
+                            data-bs-toggle="modal" data-bs-target="#logout">
+                            Logout
+                        </button>
+
+                        <div class="modal fade" id="logout" tabindex="-1" aria-labelledby="logoutLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="border: none;">
+                                        <h1 class="modal-title fs-5 text-center w-100" id="exampleModalLabel">Apakah
+                                            anda yakin melakukan logout</h1>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-center" style="border: none;">
+                                        <button type="button" class="btn btn-secondary w-100 me-4"
+                                            data-bs-dismiss="modal"
+                                            style="background-color: #999999; max-width: 150px;">Tidak</button>
+                                        <button type="button" class="btn btn-primary w-100"
+                                            style="background-color: #2791CC; max-width: 150px;">Ya</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </nav>
@@ -93,7 +106,8 @@
                             <p class="fs-5 mb-0 me-1 d-inline-block">35</p>
                             <input type="image" src="./image/Like.svg" alt="like" width="25" class="me-3">
                             <input type="image" src="./image/Bookmark.svg" alt="bookmark" width="25" class="me-3">
-                            <input type="image" src="./image/Trash.svg" alt="trash" width="27" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <input type="image" src="./image/Trash.svg" alt="trash" width="27" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
                         </div>
                     </div>
                 </div>
@@ -121,17 +135,19 @@
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header" style="border: none;">
-                  <h1 class="modal-title fs-5 text-center w-100" id="exampleModalLabel">Apakah Anda Yakin</h1>
+                <div class="modal-content">
+                    <div class="modal-header" style="border: none;">
+                        <h1 class="modal-title fs-5 text-center w-100" id="exampleModalLabel">Apakah Anda Yakin</h1>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center" style="border: none;">
+                        <button type="button" class="btn btn-secondary w-100 me-4" data-bs-dismiss="modal"
+                            style="background-color: #999999; max-width: 150px;">Tidak</button>
+                        <button type="button" class="btn btn-primary w-100"
+                            style="background-color: #2791CC; max-width: 150px;">Ya</button>
+                    </div>
                 </div>
-                <div class="modal-footer d-flex justify-content-center" style="border: none;">
-                    <button type="button" class="btn btn-secondary w-100 me-4" data-bs-dismiss="modal" style="background-color: #FF002E; max-width: 150px;">Tidak</button>
-                    <button type="button" class="btn btn-primary w-100" style="background-color: #009900; max-width: 150px;">Ya</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
 
         <div class="row mt-2">
             <div class="col d-flex align-items-center">
